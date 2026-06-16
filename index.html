@@ -16,7 +16,9 @@ header.site{display:flex;align-items:center;gap:12px;}
 h1{font-size:38px;line-height:1.1;letter-spacing:-.025em;margin:.7em 0 .2em;}
 .tagline{color:var(--muted);font-size:21px;margin:0 0 1.4em;}
 p{margin:0 0 1em;}
-.pill{display:inline-block;background:#fff0f0;color:#c0392b;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:1.6em;}
+.cta{display:inline-block;background:linear-gradient(135deg,#FF6B6B,#FF8E53);color:#fff;border-radius:12px;padding:14px 24px;font-size:17px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(255,107,107,.35);}
+.cta:hover{text-decoration:none;opacity:.94;}
+.req{color:var(--muted);font-size:14px;margin:.7em 0 1.8em;}
 a{color:var(--coral);text-decoration:none;font-weight:600;}
 a:hover{text-decoration:underline;}
 nav.foot{margin-top:44px;padding-top:20px;border-top:1px solid #eee;font-size:15px;color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;}
@@ -28,14 +30,13 @@ nav.foot a{color:var(--muted);}
   <header class="site"><div class="logo">&#9829;</div><div class="brand">DateMe</div></header>
   <h1>Find the photo that gets you matched.</h1>
   <p class="tagline">A private, on-device AI coach for your dating photos.</p>
-  <span class="pill">Coming soon to the App Store</span>
+  <a class="cta" href="https://testflight.apple.com/join/FyBj8Xsm">Join the TestFlight beta &rarr;</a>
+  <p class="req">Free beta &middot; iPhone 15 Pro or newer &middot; iOS 27 with Apple Intelligence</p>
   <p>DateMe scores and <strong>ranks your real photos</strong> for how they actually land on a dating profile, shows you
   the <strong>one change</strong> that helps most, flags the shot you're missing, and drafts <strong>bios in your own
   voice</strong>.</p>
   <p>Everything happens <strong>on your iPhone</strong>. Your photos are analyzed on-device and never leave the phone —
   no account, no uploads, no AI-generated faces. It's a coach, not a bot: it never swipes, messages, or posts for you.</p>
-  <p class="muted" style="color:var(--muted)">Requires an iPhone&nbsp;15&nbsp;Pro or newer running iOS&nbsp;27 with Apple
-  Intelligence.</p>
   <nav class="foot">
     <a href="./privacy.html">Privacy Policy</a>
     <a href="./support.html">Support</a>
