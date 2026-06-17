@@ -3,62 +3,149 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DateMe — Find the photo that gets you matched</title>
-<meta name="description" content="DateMe is a private, on-device AI coach for your dating photos. It ranks your real photos, shows the one change that helps most, and drafts bios in your voice — all on your iPhone.">
+<title>DateMe — the dating-photo coach that never sees your photos</title>
+<meta name="description" content="DateMe is a private, on-device AI coach for your dating photos. It ranks your real photos, shows the one change that helps most, and drafts bios in your voice — all on your iPhone. No uploads, no AI faces.">
+<meta property="og:title" content="DateMe — find the photo that gets you matched">
+<meta property="og:description" content="A private, on-device AI coach for your dating photos. Ranks your real photos, shows the one fix, drafts bios in your voice — all on your iPhone.">
+<meta name="theme-color" content="#0c0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b6b'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23fff'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--coral:#FF6B6B;--ink:#1d1d1f;--muted:#6e6e73;}
-*{box-sizing:border-box;}
-body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;margin:0;}
-.wrap{max-width:720px;margin:0 auto;padding:56px 22px 80px;}
-header.site{display:flex;align-items:center;gap:12px;}
-.logo{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,#FF6B6B,#FF8E53);display:grid;place-items:center;color:#fff;font-size:22px;}
-.brand{font-size:20px;font-weight:700;letter-spacing:-.01em;}
-h1{font-size:38px;line-height:1.1;letter-spacing:-.025em;margin:.7em 0 .2em;}
-.tagline{color:var(--muted);font-size:21px;margin:0 0 1.4em;}
-p{margin:0 0 1em;}
-.cta{display:inline-block;background:linear-gradient(135deg,#FF6B6B,#FF8E53);color:#fff;border-radius:12px;padding:14px 24px;font-size:17px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(255,107,107,.35);}
-.cta:hover{text-decoration:none;opacity:.94;}
-.req{color:var(--muted);font-size:14px;margin:.7em 0 1.8em;}
-a{color:var(--coral);text-decoration:none;font-weight:600;}
-a:hover{text-decoration:underline;}
-nav.foot{margin-top:44px;padding-top:20px;border-top:1px solid #eee;font-size:15px;color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;}
-nav.foot a{color:var(--muted);}
-.waitlist-wrap{margin:8px 0 22px;padding:18px 20px;border:1px solid #eee;border-radius:16px;background:#fafafa;}
-.waitlist-wrap h2{font-size:18px;margin:0 0 .4em;letter-spacing:-.01em;}
-.waitlist{display:flex;gap:10px;flex-wrap:wrap;margin:.2em 0 0;}
-.waitlist input{flex:1 1 220px;min-width:0;font:inherit;padding:13px 15px;border:1px solid #ddd;border-radius:12px;}
-.waitlist button{font:inherit;font-weight:700;color:#fff;border:0;cursor:pointer;border-radius:12px;padding:13px 22px;background:linear-gradient(135deg,#FF6B6B,#FF8E53);}
-.waitlist button:hover{opacity:.94;}
-.waitlist-note{color:var(--muted);font-size:13px;margin:.7em 0 0;}
+:root{
+  --bg:#0c0a0a; --panel:#171211;
+  --text:#f3ebe6; --muted:#a59890; --faint:#665a55;
+  --line:rgba(243,235,230,.12); --line-2:rgba(243,235,230,.07);
+  --accent:#ff6b6b; --accent-soft:#ffb0a3;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(60vw 52vh at 80% -10%,rgba(255,107,107,.18),transparent 60%),radial-gradient(46vw 38vh at 4% 10%,rgba(255,142,83,.07),transparent 55%),var(--bg);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px;}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid var(--line-2);}
+.mark{display:flex;align-items:center;gap:11px;font-family:var(--mono);font-weight:500;letter-spacing:.16em;font-size:13px;}
+.mark .heart{color:var(--accent);font-size:15px;}
+.mark a{color:inherit;text-decoration:none;}
+.meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase;}
+.meta a{color:var(--muted);text-decoration:none;}
+.meta a:hover{color:var(--accent-soft);}
+
+.hero{padding:92px 0 18px;}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:28px;display:flex;align-items:center;gap:14px;}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--accent);display:inline-block;}
+h1{font-family:var(--serif);font-weight:500;font-optical-sizing:auto;font-size:clamp(2.9rem,7.6vw,5.4rem);line-height:.98;letter-spacing:-.022em;max-width:15ch;}
+h1 em{font-style:italic;color:var(--accent-soft);font-weight:400;}
+.lede{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:42ch;margin-top:26px;line-height:1.55;}
+.lede strong{color:var(--text);font-weight:600;}
+.cta-row{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin-top:36px;}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-weight:600;font-size:15.5px;text-decoration:none;border-radius:999px;padding:14px 24px;transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease;cursor:pointer;}
+.btn .arw{transition:transform .2s ease;}
+.btn:hover .arw{transform:translateX(3px);}
+.btn-primary{background:var(--accent);color:#2a0d0d;border:1px solid var(--accent);}
+.btn-primary:hover{transform:translateY(-2px);background:var(--accent-soft);}
+.req{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint);margin-top:20px;}
+.req b{color:var(--muted);font-weight:500;}
+
+/* waitlist */
+.waitlist-wrap{margin:46px 0 0;border:1px solid var(--line);border-radius:18px;padding:26px 28px;background:linear-gradient(160deg,rgba(255,107,107,.05),transparent 45%),var(--panel);}
+.waitlist-wrap h2{font-family:var(--serif);font-weight:500;font-size:1.5rem;letter-spacing:-.01em;margin-bottom:6px;}
+.waitlist-wrap p.note{color:var(--muted);font-size:15px;max-width:46ch;margin-bottom:18px;}
+.waitlist{display:flex;gap:10px;flex-wrap:wrap;}
+.waitlist input{flex:1 1 240px;min-width:0;font-family:var(--sans);font-size:16px;color:var(--text);background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:border-color .16s ease;}
+.waitlist input::placeholder{color:var(--faint);}
+.waitlist input:focus{outline:none;border-color:var(--accent);}
+.waitlist button{font-family:var(--sans);font-weight:600;font-size:15.5px;color:#2a0d0d;border:0;cursor:pointer;border-radius:12px;padding:14px 22px;background:var(--accent);transition:transform .18s ease,background .18s ease;}
+.waitlist button:hover{transform:translateY(-2px);background:var(--accent-soft);}
+.fine{color:var(--faint);font-size:12.5px;margin-top:12px;font-family:var(--mono);letter-spacing:.02em;}
+
+/* how it works */
+.sec{padding:84px 0 0;}
+.sec-label{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);display:flex;align-items:center;gap:12px;margin-bottom:30px;}
+.sec-label b{color:var(--text);font-weight:500;}
+.sec-label .ln{flex:1;height:1px;background:var(--line-2);}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.steps div{padding:28px 22px 30px 22px;border-left:1px solid var(--line-2);}
+.steps div:first-child{border-left:0;padding-left:0;}
+.steps .n{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--accent);margin-bottom:12px;}
+.steps .t{font-family:var(--serif);font-size:1.32rem;line-height:1.2;letter-spacing:-.01em;margin-bottom:8px;}
+.steps .d{color:var(--muted);font-size:14.5px;}
+
+/* privacy callout */
+.callout{margin-top:30px;border:1px solid var(--line);border-radius:18px;padding:30px 30px;background:var(--panel);position:relative;overflow:hidden;}
+.callout::after{content:"";position:absolute;width:300px;height:300px;right:-80px;bottom:-120px;background:radial-gradient(circle,rgba(255,107,107,.14),transparent 65%);}
+.callout .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+.callout p{font-family:var(--serif);font-size:clamp(1.25rem,3vw,1.7rem);line-height:1.3;letter-spacing:-.01em;max-width:30ch;}
+.callout p strong{color:var(--accent-soft);font-weight:500;}
+
+footer{margin-top:90px;border-top:1px solid var(--line);padding:32px 0 60px;display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;}
+footer a{color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;transition:color .16s ease;}
+footer a:hover{color:var(--accent-soft);}
+footer .sig{margin-left:auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--faint);text-transform:uppercase;}
+
+[data-rise]{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;}
+@keyframes rise{to{opacity:1;transform:none;}}
+@media (max-width:640px){.steps{grid-template-columns:1fr;}.steps div{border-left:0;padding:22px 0;border-top:1px solid var(--line-2);}.steps div:first-child{border-top:0;}.hero{padding:60px 0 10px;}.waitlist-wrap{padding:22px;}}
+@media (prefers-reduced-motion:reduce){[data-rise]{animation:none;opacity:1;transform:none;}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="site"><div class="logo">&#9829;</div><div class="brand">DateMe</div></header>
-  <h1>Find the photo that gets you matched.</h1>
-  <p class="tagline">A private, on-device AI coach for your dating photos.</p>
-  <a class="cta" href="https://testflight.apple.com/join/FyBj8Xsm">Join the TestFlight beta &rarr;</a>
-  <p class="req">Free beta &middot; iPhone 15 Pro or newer &middot; iOS 27 with Apple Intelligence</p>
-  <div class="waitlist-wrap">
-    <h2>Don&rsquo;t have iOS 27 yet?</h2>
-    <p style="margin:0;color:var(--muted);font-size:15px;">DateMe needs the iOS&nbsp;27 beta today and lands on the App Store this September. Leave your email and I&rsquo;ll tell you the moment it&rsquo;s live &mdash; nothing else.</p>
-    <!-- Buttondown waitlist: create a free account at https://buttondown.com, then replace BOTH "muhannad" below with your username. -->
-    <form class="waitlist" action="https://buttondown.com/api/emails/embed-subscribe/muhannad" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/muhannad','popupwindow')">
-      <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
-      <button type="submit">Notify me at launch</button>
-    </form>
-    <p class="waitlist-note">Used only to tell you when DateMe launches. Unsubscribe anytime.</p>
+
+  <div class="topbar">
+    <div class="mark"><span class="heart">&#9829;</span>DateMe</div>
+    <div class="meta">by <a href="https://mhndlabs.com">MHND&nbsp;LABS</a> · on-device</div>
   </div>
-  <p>DateMe scores and <strong>ranks your real photos</strong> for how they actually land on a dating profile, shows you
-  the <strong>one change</strong> that helps most, flags the shot you're missing, and drafts <strong>bios in your own
-  voice</strong>.</p>
-  <p>Everything happens <strong>on your iPhone</strong>. Your photos are analyzed on-device and never leave the phone —
-  no account, no uploads, no AI-generated faces. It's a coach, not a bot: it never swipes, messages, or posts for you.</p>
-  <nav class="foot">
-    <a href="./privacy.html">Privacy Policy</a>
+
+  <section class="hero">
+    <div class="eyebrow" data-rise style="animation-delay:.05s">On-device dating-photo coach</div>
+    <h1 data-rise style="animation-delay:.12s">Find the photo that gets you <em>matched.</em></h1>
+    <p class="lede" data-rise style="animation-delay:.22s">A private AI coach for your dating photos. It ranks your <strong>real</strong> photos, shows the one change that helps most, and drafts bios in your voice &mdash; all on your iPhone.</p>
+    <div class="cta-row" data-rise style="animation-delay:.32s">
+      <a class="btn btn-primary" href="https://testflight.apple.com/join/FyBj8Xsm">Join the TestFlight beta <span class="arw">&rarr;</span></a>
+    </div>
+    <p class="req" data-rise style="animation-delay:.4s">Free beta · <b>iPhone 15 Pro or newer · iOS 27 · Apple Intelligence</b></p>
+
+    <div class="waitlist-wrap" data-rise style="animation-delay:.48s">
+      <h2>Don&rsquo;t have iOS 27 yet?</h2>
+      <p class="note">DateMe needs the iOS&nbsp;27 beta today and lands on the App Store this September. Leave your email and I&rsquo;ll tell you the moment it&rsquo;s live &mdash; nothing else.</p>
+      <!-- Buttondown waitlist. -->
+      <form class="waitlist" action="https://buttondown.com/api/emails/embed-subscribe/muhannad" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/muhannad','popupwindow')">
+        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+        <button type="submit">Notify me at launch</button>
+      </form>
+      <p class="fine">Used only to tell you when DateMe launches. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-label"><b>How it works</b><span class="ln"></span><span>3 steps</span></div>
+    <div class="steps">
+      <div data-rise><div class="n">/ 01</div><div class="t">Ranks your real photos</div><div class="d">Every shot scored for how it actually lands on a dating profile &mdash; best-first, so you know which to lead with.</div></div>
+      <div data-rise style="animation-delay:.08s"><div class="n">/ 02</div><div class="t">The one fix per photo</div><div class="d">Not a vague score &mdash; the single change that helps most, plus the type of shot your profile is missing.</div></div>
+      <div data-rise style="animation-delay:.16s"><div class="n">/ 03</div><div class="t">Bios in your voice</div><div class="d">Drafts real, specific bios from your own words. No clichés, no catfishing &mdash; copy, paste, done.</div></div>
+    </div>
+
+    <div class="callout" data-rise>
+      <div class="k">The privacy part</div>
+      <p>Your photos are analyzed <strong>entirely on your iPhone</strong> and never leave the device. No account, no uploads, no AI-generated faces.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="./privacy.html">Privacy</a>
     <a href="./support.html">Support</a>
-    <a href="mailto:mhndcorp@gmail.com">mhndcorp@gmail.com</a>
-  </nav>
+    <a href="mailto:mhndcorp@gmail.com">Email</a>
+    <a href="https://mhndlabs.com">MHND LABS</a>
+    <span class="sig">A coach, not a bot — it never swipes, messages, or posts for you.</span>
+  </footer>
+
 </div>
 </body>
 </html>
