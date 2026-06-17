@@ -5,30 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DateMe — Support</title>
 <meta name="description" content="Help and contact for DateMe: Rank Your Photos. Email mhndcorp@gmail.com.">
+<meta name="theme-color" content="#0c0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b6b'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23fff'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--coral:#FF6B6B;--ink:#1d1d1f;--muted:#6e6e73;}
-*{box-sizing:border-box;}
-body{font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;margin:0;}
-.wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px;}
-header.site{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
-.logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#FF6B6B,#FF8E53);display:grid;place-items:center;color:#fff;font-size:19px;}
-.brand{font-size:18px;font-weight:700;}
-h1{font-size:32px;letter-spacing:-.02em;margin:.5em 0 .15em;}
-h2{font-size:20px;margin:1.8em 0 .4em;letter-spacing:-.01em;}
-h3{font-size:17px;margin:1.3em 0 .2em;}
-p,li{margin:0 0 .8em;}
-ol,ul{padding-left:1.3em;}
-.lead{font-size:19px;color:var(--muted);}
-.card{background:#fff7f7;border:1px solid #ffe3e3;border-radius:14px;padding:18px 20px;margin:1.2em 0;}
-a{color:var(--coral);text-decoration:none;font-weight:600;}a:hover{text-decoration:underline;}
-.q{font-weight:700;margin:1.1em 0 .1em;}
-nav.foot{margin-top:44px;padding-top:20px;border-top:1px solid #eee;font-size:15px;color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;}
-nav.foot a{color:var(--muted);}
+:root{--bg:#0c0a0a;--panel:#171211;--text:#f3ebe6;--muted:#a59890;--faint:#665a55;--line:rgba(243,235,230,.12);--line-2:rgba(243,235,230,.07);--accent:#ff6b6b;--accent-soft:#ffb0a3;--serif:"Fraunces",Georgia,serif;--sans:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(50vw 40vh at 88% -12%,rgba(255,107,107,.12),transparent 60%),var(--bg);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.wrap{max-width:740px;margin:0 auto;padding:0 26px 80px;}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line-2);margin-bottom:48px;}
+.mark{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-weight:500;letter-spacing:.16em;font-size:13px;color:var(--text);text-decoration:none;}
+.mark .heart{color:var(--accent);font-size:15px;}
+.meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase;}
+.meta a{color:var(--muted);text-decoration:none;}.meta a:hover{color:var(--accent-soft);}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,6vw,3rem);letter-spacing:-.02em;line-height:1.04;margin-bottom:.25em;}
+.lead{font-size:clamp(1.05rem,2.4vw,1.25rem);color:var(--muted);margin-bottom:1.4em;}
+h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;letter-spacing:-.01em;margin:2em 0 .5em;display:flex;align-items:baseline;gap:11px;}
+h2::before{content:"/";font-family:var(--mono);font-size:.85rem;color:var(--accent);}
+p,li{color:var(--muted);margin-bottom:.85em;}
+p strong,li strong{color:var(--text);font-weight:600;}
+ol,ul{padding-left:1.4em;}li{padding-left:.2em;}
+a{color:var(--accent-soft);text-decoration:none;font-weight:500;border-bottom:1px solid rgba(255,176,163,.3);}a:hover{border-color:var(--accent-soft);}
+.card{background:linear-gradient(160deg,rgba(255,107,107,.07),transparent 60%),var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:1.4em 0 .4em;}
+.card strong{color:var(--text);}
+.card a{border:0;}
+.q{font-family:var(--serif);font-weight:500;font-size:1.12rem;color:var(--text);margin:1.4em 0 .15em;}
+nav.foot{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);display:flex;gap:18px 26px;flex-wrap:wrap;}
+nav.foot a{color:var(--muted);font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;border:0;}
+nav.foot a:hover{color:var(--accent-soft);}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="site"><div class="logo">&#9829;</div><div class="brand">DateMe</div></header>
+  <div class="topbar">
+    <a class="mark" href="./index.html"><span class="heart">&#9829;</span>DateMe</a>
+    <div class="meta">by <a href="https://mhndlabs.com">MHND&nbsp;LABS</a> · on-device</div>
+  </div>
+
   <h1>Support</h1>
   <p class="lead">Need help with DateMe: Rank Your Photos? You're in the right place.</p>
 
