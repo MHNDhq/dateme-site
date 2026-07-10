@@ -1,0 +1,8 @@
+# dateme.mhndlabs.com — DateMe: Rank Your Photos
+# Search engines and AI answer engines are welcome to read this site.
+# (User photos never touch this site or any server — analysis is on-device in the app.)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dateme.mhndlabs.com/sitemap.xml

@@ -3,11 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DateMe — the dating-photo coach that never sees your photos</title>
-<meta name="description" content="DateMe is a private, on-device AI coach for your dating photos. It ranks your real photos, shows the one change that helps most, and drafts bios in your voice — all on your iPhone. No uploads, no AI faces.">
+<title>DateMe — Rank Your Dating Photos with Private On-Device AI</title>
+<meta name="description" content="DateMe ranks your real dating photos on your iPhone — no uploads, no account, no AI faces. See which photo to lead with and the one fix that helps each photo most.">
+<link rel="canonical" href="https://dateme.mhndlabs.com/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="apple-itunes-app" content="app-id=6780742367">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dateme.mhndlabs.com/">
+<meta property="og:site_name" content="DateMe">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="DateMe — find the photo that gets you matched">
 <meta property="og:description" content="A private, on-device AI coach for your dating photos. Ranks your real photos, shows the one fix, drafts bios in your voice — all on your iPhone.">
+<meta property="og:image" content="https://dateme.mhndlabs.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DateMe — find the photo that gets you matched. On-device dating-photo coach.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DateMe — find the photo that gets you matched">
+<meta name="twitter:description" content="Ranks your real dating photos, one fix each, bios in your voice — all on your iPhone. No uploads, no AI faces.">
+<meta name="twitter:image" content="https://dateme.mhndlabs.com/og.png">
 <meta name="theme-color" content="#0c0a0a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dateme.mhndlabs.com/#app",
+      "name": "DateMe: Rank Your Photos",
+      "alternateName": "DateMe",
+      "url": "https://dateme.mhndlabs.com/",
+      "description": "DateMe is a private, on-device AI dating-photo coach for iPhone. It ranks your real photos for how they land on a dating profile, shows the single fix that helps each photo most, and drafts bios in your voice. Photos are analyzed entirely on-device and never leave the phone — no uploads, no account, no AI-generated faces.",
+      "operatingSystem": "iOS 26.0 or later",
+      "applicationCategory": "LifestyleApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "installUrl": "https://testflight.apple.com/join/FyBj8Xsm",
+      "image": "https://dateme.mhndlabs.com/app-icon.png",
+      "screenshot": "https://dateme.mhndlabs.com/og.png",
+      "featureList": [
+        "Ranks your real dating photos on-device",
+        "One concrete fix per photo",
+        "Picks your lead photo",
+        "Drafts dating-app bios in your own voice",
+        "No uploads, no account, no AI-generated faces"
+      ],
+      "author": { "@id": "https://dateme.mhndlabs.com/#org" },
+      "publisher": { "@id": "https://dateme.mhndlabs.com/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dateme.mhndlabs.com/#org",
+      "name": "MHND LABS",
+      "url": "https://mhndlabs.com",
+      "founder": { "@id": "https://dateme.mhndlabs.com/#founder" },
+      "sameAs": [
+        "https://www.youtube.com/@mhndlabs"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dateme.mhndlabs.com/#founder",
+      "name": "Muhannad Ahmed",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://dateme.mhndlabs.com/#org" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dateme.mhndlabs.com/#website",
+      "url": "https://dateme.mhndlabs.com/",
+      "name": "DateMe",
+      "publisher": { "@id": "https://dateme.mhndlabs.com/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dateme.mhndlabs.com/#webpage",
+      "url": "https://dateme.mhndlabs.com/",
+      "name": "DateMe — Rank Your Dating Photos with Private On-Device AI",
+      "isPartOf": { "@id": "https://dateme.mhndlabs.com/#website" },
+      "about": { "@id": "https://dateme.mhndlabs.com/#app" }
+    }
+  ]
+}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b6b'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23fff'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +151,8 @@ h1 em{font-style:italic;color:var(--accent-soft);font-weight:400;}
 .steps div{padding:28px 22px 30px 22px;border-left:1px solid var(--line-2);}
 .steps div:first-child{border-left:0;padding-left:0;}
 .steps .n{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--accent);margin-bottom:12px;}
-.steps .t{font-family:var(--serif);font-size:1.32rem;line-height:1.2;letter-spacing:-.01em;margin-bottom:8px;}
+.steps .t{font-family:var(--serif);font-size:1.32rem;line-height:1.2;letter-spacing:-.01em;margin:0 0 8px;font-weight:400;}
+.sec-label h2{font:inherit;color:var(--text);font-weight:500;margin:0;display:inline;}
 .steps .d{color:var(--muted);font-size:14.5px;}
 
 /* privacy callout */
@@ -83,6 +161,15 @@ h1 em{font-style:italic;color:var(--accent-soft);font-weight:400;}
 .callout .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
 .callout p{font-family:var(--serif);font-size:clamp(1.25rem,3vw,1.7rem);line-height:1.3;letter-spacing:-.01em;max-width:30ch;}
 .callout p strong{color:var(--accent-soft);font-weight:500;}
+
+/* faq */
+.faq-list{border-top:1px solid var(--line);}
+.faq-item{padding:24px 0 26px;border-bottom:1px solid var(--line-2);}
+.faq-item h3{font-family:var(--serif);font-weight:500;font-size:1.22rem;line-height:1.25;letter-spacing:-.01em;margin:0 0 9px;}
+.faq-item p{color:var(--muted);font-size:15px;max-width:66ch;}
+.faq-item p b{color:var(--text);font-weight:600;}
+.about-line{margin-top:34px;color:var(--faint);font-size:13.5px;max-width:70ch;line-height:1.7;}
+.about-line a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);}
 
 footer{margin-top:90px;border-top:1px solid var(--line);padding:32px 0 60px;display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;}
 footer a{color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;transition:color .16s ease;}
@@ -110,11 +197,11 @@ footer .sig{margin-left:auto;font-family:var(--mono);font-size:12px;letter-spaci
     <div class="cta-row" data-rise style="animation-delay:.32s">
       <a class="btn btn-primary" href="https://testflight.apple.com/join/FyBj8Xsm">Join the TestFlight beta <span class="arw">&rarr;</span></a>
     </div>
-    <p class="req" data-rise style="animation-delay:.4s">Free beta · <b>iPhone 15 Pro or newer · iOS 27 · Apple Intelligence</b></p>
+    <p class="req" data-rise style="animation-delay:.4s">Free beta · <b>any iPhone on iOS 26 or later</b> · full AI coaching with Apple Intelligence</p>
 
     <div class="waitlist-wrap" data-rise style="animation-delay:.48s">
-      <h2>Don&rsquo;t have iOS 27 yet?</h2>
-      <p class="note">DateMe needs the iOS&nbsp;27 beta today and lands on the App Store this September. Leave your email and I&rsquo;ll tell you the moment it&rsquo;s live &mdash; nothing else.</p>
+      <h2>Rather wait for the App&nbsp;Store?</h2>
+      <p class="note">DateMe is in free public beta on TestFlight today and lands on the App Store this September. Leave your email and I&rsquo;ll tell you the moment it&rsquo;s live &mdash; nothing else.</p>
       <!-- Buttondown waitlist. -->
       <form class="waitlist" action="https://buttondown.com/api/emails/embed-subscribe/muhannad" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/muhannad','popupwindow')">
         <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
@@ -125,11 +212,11 @@ footer .sig{margin-left:auto;font-family:var(--mono);font-size:12px;letter-spaci
   </section>
 
   <section class="sec">
-    <div class="sec-label"><b>How it works</b><span class="ln"></span><span>3 steps</span></div>
+    <div class="sec-label"><h2>How it works</h2><span class="ln"></span><span>3 steps</span></div>
     <div class="steps">
-      <div data-rise><div class="n">/ 01</div><div class="t">Ranks your real photos</div><div class="d">Every shot scored for how it actually lands on a dating profile &mdash; best-first, so you know which to lead with.</div></div>
-      <div data-rise style="animation-delay:.08s"><div class="n">/ 02</div><div class="t">The one fix per photo</div><div class="d">Not a vague score &mdash; the single change that helps most, plus the type of shot your profile is missing.</div></div>
-      <div data-rise style="animation-delay:.16s"><div class="n">/ 03</div><div class="t">Bios in your voice</div><div class="d">Drafts real, specific bios from your own words. No clichés, no catfishing &mdash; copy, paste, done.</div></div>
+      <div data-rise><div class="n">/ 01</div><h3 class="t">Ranks your real photos</h3><div class="d">Every shot scored for how it actually lands on a dating profile &mdash; best-first, so you know which to lead with.</div></div>
+      <div data-rise style="animation-delay:.08s"><div class="n">/ 02</div><h3 class="t">The one fix per photo</h3><div class="d">Not a vague score &mdash; the single change that helps most, plus the type of shot your profile is missing.</div></div>
+      <div data-rise style="animation-delay:.16s"><div class="n">/ 03</div><h3 class="t">Bios in your voice</h3><div class="d">Drafts real, specific bios from your own words. No clichés, no catfishing &mdash; copy, paste, done.</div></div>
     </div>
 
     <div class="callout" data-rise>
@@ -138,7 +225,39 @@ footer .sig{margin-left:auto;font-family:var(--mono);font-size:12px;letter-spaci
     </div>
   </section>
 
+  <section class="sec" id="faq">
+    <div class="sec-label"><h2>Questions, answered</h2><span class="ln"></span><span>FAQ</span></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is DateMe?</h3>
+        <p><b>DateMe: Rank Your Photos</b> is an iPhone app that scores your real dating photos for how they land on a profile, picks the photo you should lead with, and shows the one fix that helps each photo most. It also drafts dating-app bios in your own voice. It&rsquo;s built by MHND&nbsp;LABS.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does DateMe upload my photos anywhere?</h3>
+        <p><b>No.</b> Analysis runs entirely on your iPhone using Apple&rsquo;s on-device models. Your photos never leave the phone, there&rsquo;s no account to create, and the app&rsquo;s App&nbsp;Store privacy label is &ldquo;Data Not Collected.&rdquo;</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which iPhones does DateMe work on?</h3>
+        <p>Any iPhone running <b>iOS 26 or later</b> can rank photos. The deeper AI coaching &mdash; building your best profile and drafting bios &mdash; uses Apple&nbsp;Intelligence, which needs an iPhone&nbsp;15&nbsp;Pro or newer.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is DateMe free?</h3>
+        <p>The public beta is <b>free on TestFlight</b> today. When DateMe reaches the App&nbsp;Store, photo scoring stays free; the full coaching &mdash; per-photo fixes, profile building, and bios &mdash; is part of DateMe&nbsp;Pro.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Will DateMe swipe or message for me?</h3>
+        <p><b>No.</b> DateMe is a coach, not automation. It never swipes, never sends messages, and never posts on your behalf &mdash; it helps you show up as yourself, better.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does DateMe generate AI photos of me?</h3>
+        <p><b>No.</b> DateMe works only with photos you already have. It never generates, retouches, or invents faces &mdash; the person who shows up to the date should be the person in the profile.</p>
+      </div>
+    </div>
+    <p class="about-line">DateMe: Rank Your Photos is made by <a href="https://mhndlabs.com">MHND LABS</a>, the independent studio of Muhannad Ahmed. The app entered free public beta on TestFlight in June 2026 and arrives on the App&nbsp;Store in September 2026. Guides on dating-photo strategy live on the <a href="/blog/">DateMe blog</a>.</p>
+  </section>
+
   <footer>
+    <a href="/blog/">Blog</a>
     <a href="./privacy.html">Privacy</a>
     <a href="./support.html">Support</a>
     <a href="mailto:mhndcorp@gmail.com">Email</a>

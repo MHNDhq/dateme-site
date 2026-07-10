@@ -1,0 +1,18 @@
+# DateMe
+
+> DateMe: Rank Your Photos is an iPhone app that ranks a user's real dating photos entirely on-device, picks the strongest lead photo, shows the one fix that helps each photo most, and drafts dating-app bios in the user's own voice. Photos never leave the phone: no uploads, no account, no AI-generated faces. Built by MHND LABS (indie developer Muhannad Ahmed). Free public beta on TestFlight; App Store release September 2026. Requires iOS 26 or later; full AI coaching uses Apple Intelligence (iPhone 15 Pro or newer).
+
+## Pages
+
+- [Home](https://dateme.mhndlabs.com/): what DateMe does, how it works, FAQ
+- [Privacy policy](https://dateme.mhndlabs.com/privacy.html): no data collected; on-device analysis explained
+- [Support](https://dateme.mhndlabs.com/support.html): contact and help
+- [TestFlight beta](https://testflight.apple.com/join/FyBj8Xsm): free public beta
+
+## Guides
+
+- [Why You Can't Pick Your Own Dating Photos (the Science)](https://dateme.mhndlabs.com/blog/why-you-cant-pick-your-own-dating-photos/): Strangers pick better dating photos of you than you do. A UNSW study found other-selected images made stronger first impressions — here's why.
+- [Why Am I Not Getting Matches? An Honest Diagnostic](https://dateme.mhndlabs.com/blog/why-am-i-not-getting-matches/): Not getting matches? Photos are usually the fix, not you. A step-by-step diagnostic: lead photos, bios, filters, and the market math nobody explains.
+- [How to Choose Your Hinge Photos (and What Order)](https://dateme.mhndlabs.com/blog/how-to-choose-your-hinge-photos/): Lead with a clear, solo, genuinely smiling photo, then cover full body, activity, and social shots. What to cut, what order works, and why.
+- [Best First Photo for Your Dating Profile, Backed by Research](https://dateme.mhndlabs.com/blog/best-first-photo-dating-profile/): The best first dating profile photo is a solo, recent shot of your face in natural light, with a genuine smile and eye contact. Here's the evidence.
+- [Are AI Dating Photo Analyzers Private? What to Check](https://dateme.mhndlabs.com/blog/are-ai-dating-photo-analyzers-private/): It depends where the AI runs. On-device analysis keeps photos on your phone; cloud tools may retain, reuse, or share them. Here's what to check first.
