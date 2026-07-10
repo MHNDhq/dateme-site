@@ -1,0 +1,12 @@
+# DateMe blog topic backlog — one per line: slug | working title | target query / angle
+# generate_post.py picks the FIRST line whose slug has no file in blog/src/ yet.
+# Keep slugs kebab-case; delete or reorder lines freely.
+
+dating-profile-photo-mistakes | 8 Dating Profile Photo Mistakes (and the Fix for Each) | "dating profile photo mistakes" — diagnostic listicle of fixable errors, each with the one fix; no shaming
+how-many-photos-dating-profile | How Many Photos Should Your Dating Profile Have? | "how many photos dating profile" — the Tyson et al. 1-vs-3 data + variety logic; concrete slot plan
+dating-photo-ideas-at-home | Dating Photo Ideas You Can Shoot at Home This Weekend | "dating photo ideas at home" — window light, burst technique, tripod/timer setups; zero gear
+do-dating-apps-compress-photos | Do Dating Apps Compress Your Photos? What It Means for Quality | "dating apps photo quality" — export/resolution basics, why sharp originals matter, honest about unknowns
+bumble-first-photo-tips | Your Bumble First Photo: What Works and Why | "bumble first photo" — platform-specific lead-photo guidance, reuse the first-photo evidence base
+what-to-wear-dating-profile-photos | What to Wear in Dating Profile Photos (Without Overthinking It) | "what to wear dating profile photos" — fit/color/context basics, anti-costume, be the person who shows up
+smiling-vs-serious-dating-photos | Smiling vs. Serious in Dating Photos: What the Research Says | "should I smile in dating photos" — Duchenne evidence, when neutral is honest, expression variety across slots
+group-photos-dating-profile | Group Photos on a Dating Profile: How Many, Which, and Where | "group photos dating profile" — cheerleader effect, identifiability, the one-social-photo rule
