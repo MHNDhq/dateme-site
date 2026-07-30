@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DateMe — Privacy Policy</title>
-<meta name="description" content="DateMe collects no data. Your photos are analyzed entirely on your iPhone and never leave the device.">
+<meta name="description" content="DateMe analyzes your photos entirely on your iPhone — they never leave the device. Limited anonymous, opt-out usage analytics; no accounts, no ads, no tracking.">
 <link rel="canonical" href="https://dateme.mhndlabs.com/privacy.html">
 <meta name="theme-color" content="#0c0a0a">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b6b'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23fff'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
@@ -46,26 +46,49 @@ nav.foot a:hover{color:var(--accent-soft);}
   </div>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July&nbsp;2,&nbsp;2026</p>
+  <p class="updated">Last updated: July&nbsp;30,&nbsp;2026</p>
 
   <p class="lead">DateMe is built around one promise: <strong>your photos never leave your iPhone.</strong></p>
 
   <h2>The short version</h2>
   <p>Your photos, and the face details the app reads from them, are analyzed entirely on your iPhone and are never
-  uploaded anywhere. There are no accounts, no sign-ups, no advertising, and no tracking. The only data that leaves
-  your device relates to <strong>purchases</strong>, if you subscribe (see below).</p>
+  uploaded anywhere. There are no accounts, no sign-ups, no advertising, and no cross-app tracking. DateMe shares
+  limited anonymous app-usage and reliability events with PostHog by default; you can turn this off anytime in
+  <strong>Your details → Help improve DateMe</strong>. If you subscribe, purchase information is processed by Apple
+  and RevenueCat. After you explicitly choose <strong>Build best profile</strong>, text-only scores and coaching
+  notes may also be processed by Apple's Private Cloud Compute; photos and raw face details are never included.</p>
 
   <h2>Photos</h2>
   <ul>
     <li>The photos you add are analyzed <strong>entirely on your iPhone</strong> using Apple's on-device intelligence.</li>
     <li>Your photos are <strong>never uploaded</strong> to us or anyone else, and are never sent off the device.</li>
-    <li>Photos and their analysis are stored <strong>locally</strong> on your device, and are removed when you delete
-    them in the app or delete the app.</li>
+    <li>Photos and their analysis are stored <strong>locally</strong> in DateMe's private app storage, excluded from
+    device backups, and removed when you delete them in the app or delete the app. Deleting a DateMe copy does not
+    delete the original from your Photos library.</li>
   </ul>
 
-  <h2>Information we collect</h2>
-  <p>DateMe does not collect personal information, usage analytics, contact information, or location data. The one
-  exception is purchase information when you subscribe to DateMe Pro, described below.</p>
+  <h2>Anonymous usage analytics</h2>
+  <p>To understand which features are useful and whether analysis succeeds quickly and reliably, DateMe uses
+  <strong>PostHog</strong> for limited product analytics. Analytics are enabled by default and use a random
+  app-install identifier. We do not attach your name, email, Apple ID, advertising identifier, or an account ID,
+  and PostHog is configured not to capture IP addresses for DateMe analytics.</p>
+  <p>DateMe shares only events such as:</p>
+  <ul>
+    <li>app opens and onboarding steps reached;</li>
+    <li>counts of photos imported, analyzed successfully, or not analyzed;</li>
+    <li>coarse success, failure category, and duration for photo analysis, profile building, and bio generation;</li>
+    <li>paywall entry source and whether DateMe observed an active Pro entitlement; and</li>
+    <li>whether a result was copied or a share sheet was opened.</li>
+  </ul>
+  <p>DateMe <strong>never</strong> sends PostHog your photos, photo identifiers, scores, face details, dating-app or
+  relationship preferences, quiz answers, voice notes, bio text, coaching text, filenames, URLs, raw errors, product
+  or transaction identifiers, prices, or payment details. Automatic screen capture, session replay, autocapture,
+  surveys, feature flags, logs, and crash capture are disabled.</p>
+  <p>You can stop future analytics immediately in <strong>Your details → Help improve DateMe</strong>. Turning this
+  off does not affect any feature. PostHog processes the anonymous events described above only to help us improve
+  DateMe; its privacy information is at <a href="https://posthog.com/privacy">posthog.com/privacy</a>. For questions
+  about retention or deletion of DateMe analytics, contact us at the email below. Because DateMe has no account or
+  contact identifier, we may be unable to associate anonymous historical events with you.</p>
 
   <h2>Purchases (DateMe Pro)</h2>
   <p>Subscriptions are processed by <strong>Apple</strong> through the App Store — we never see your payment details.
@@ -78,14 +101,16 @@ nav.foot a:hover{color:var(--accent-soft);}
   with RevenueCat or anyone else. To request deletion of purchase records, email us at the address below.</p>
 
   <h2>Third parties</h2>
-  <p>DateMe does not include advertising or tracking SDKs. Apart from Apple (payments) and RevenueCat (purchase
-  history, described above), no data is shared with third parties.</p>
+  <p>DateMe does not include advertising SDKs and does not use collected data to track you across other companies'
+  apps or websites. The limited third-party processing is Apple (payments and optional Private Cloud Compute),
+  RevenueCat (purchase history), and PostHog (the anonymous usage analytics described above).</p>
 
-  <h2>On-device AI</h2>
-  <p>DateMe uses Apple's on-device foundation models to analyze photos and draft text. This processing runs on your
-  device; DateMe does not send your content to our servers (we don't operate any). If a future version uses Apple's
-  Private Cloud Compute for some processing, that is designed by Apple so your content is not accessible to Apple or to
-  us — and this policy will be updated to say so.</p>
+  <h2>AI processing</h2>
+  <p>Photo scoring and raw face-detail analysis run <strong>on your device</strong>. DateMe does not send photos or
+  raw face details to our servers (we don't operate any) or to RevenueCat. When you explicitly choose
+  <strong>Build best profile</strong>, the app tells you before continuing that text-only photo scores and coaching
+  notes may be processed by Apple's Private Cloud Compute to build your recommended order and bios. Your photos are
+  not included. If Private Cloud Compute is unavailable, DateMe may use Apple's on-device model instead.</p>
 
   <h2>Children</h2>
   <p>DateMe is intended for users aged 16 and older and is not directed at children.</p>
